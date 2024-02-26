@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto</title>
+<style id="applicationStylesheet" type="text/css">
+	@import url('https://fonts.cdnfonts.com/css/argentum-sans');
+	.mediaViewInfo {
+		--web-view-name: Contacto;
+		--web-view-id: Contacto;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Contacto;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+		max-width: 100%;
+	}
+	a {
+		all: unset;
+	}
+	#Contacto {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Contacto;
+		--web-view-id: Contacto;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Diagrama_AVV {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		left: 0px;
+		top: -211px;
+		overflow: visible;
+	}
+	#Rectngulo_8 {
+		fill: rgba(18,18,18,1);
+	}
+	.Rectngulo_8 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 710px;
+		left: 0px;
+		top: 370px;
+	}
+	#Footer {
+		position: absolute;
+		width: 1920px;
+		height: 75px;
+		left: 0px;
+		top: 1005px;
+		overflow: visible;
+	}
+	#Rectngulo_12 {
+		filter: blur(5px);
+		fill: rgba(255,255,255,.25);
+	}
+	.Rectngulo_12 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 75px;
+		left: 0px;
+		top: 0px;
+	}
+	#alexm2media {
+		left: 1724px;
+		top: 26px;
+		position: absolute;
+		overflow: visible;
+		width: 140px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 20px;
+		color: rgba(193,120,36,1);
+	}
+	#n_2024_-_AlexM {
+		left: 50px;
+		top: 26px;
+		position: absolute;
+		overflow: visible;
+		width: 159px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Formulario {
+		position: absolute;
+		width: 1000px;
+		height: 437px;
+		left: 460px;
+		top: 537px;
+		overflow: visible;
+	}
+	#Nombre {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 104px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(255,255,255,1);
+	}
+	#Correo {
+		left: 0px;
+		top: 129px;
+		position: absolute;
+		overflow: visible;
+		width: 84px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(255,255,255,1);
+	}
+	#Mensaje {
+		left: 0px;
+		top: 258px;
+		position: absolute;
+		overflow: visible;
+		width: 105px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(255,255,255,1);
+	}
+	#Rectngulo_9 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectngulo_9 {
+		position: absolute;
+		overflow: visible;
+		width: 1000px;
+		height: 50px;
+		left: 0px;
+		top: 29px;
+	}
+	#Rectngulo_10 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectngulo_10 {
+		position: absolute;
+		overflow: visible;
+		width: 1000px;
+		height: 50px;
+		left: 0px;
+		top: 158px;
+	}
+	#Rectngulo_11 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectngulo_11 {
+		position: absolute;
+		overflow: visible;
+		width: 1000px;
+		height: 150px;
+		left: 0px;
+		top: 287px;
+	}
+	#Utiliza_este_formulario_para_c {
+		left: 704px;
+		top: 488px;
+		position: absolute;
+		overflow: visible;
+		width: 510px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(193,120,36,1);
+	}
+	#Quieres_ponerte_en_contacto_co {
+		left: 560px;
+		top: 430px;
+		position: absolute;
+		overflow: visible;
+		width: 793px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+	}
+	#Lnea_2 {
+		fill: transparent;
+		stroke: rgba(193,120,36,0.502);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Lnea_2 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.2));
+		overflow: visible;
+		position: absolute;
+		width: 249px;
+		height: 20px;
+		left: 845.5px;
+		top: 258.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Contacto_z {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.2));
+		left: 845px;
+		top: 201px;
+		position: absolute;
+		overflow: visible;
+		width: 232px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 50px;
+		color: rgba(255,255,255,1);
+	}
+	#Men {
+		position: absolute;
+		width: 1920px;
+		height: 100px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectngulo_1 {
+		filter: blur(5px);
+		fill: rgba(255,255,255,.25);
+	}
+	.Rectngulo_1 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 100px;
+		left: 0px;
+		top: 0px;
+	}
+	#CONTACTO {
+		left: 1679px;
+		top: 36px;
+		position: absolute;
+		overflow: visible;
+		width: 141px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 25px;
+		color: rgba(193,120,36,1);
+	}
+	#PROYECTOS {
+		left: 1476px;
+		top: 36px;
+		position: absolute;
+		overflow: visible;
+		width: 153px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Proyectos.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 25px;
+		color: rgba(255,255,255,1);
+	}
+	#SOBRE_M {
+		left: 1300px;
+		top: 36px;
+		position: absolute;
+		overflow: visible;
+		width: 126px;
+		white-space: nowrap;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: Sobre_M_.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 25px;
+		color: rgba(255,255,255,1);
+	}
+	#INICIO {
+		left: 1170px;
+		top: 36px;
+		position: absolute;
+		overflow: visible;
+		width: 81px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Inicio.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 25px;
+		color: rgba(255,255,255,1);
+	}
+	#AlexM2 {
+		position: absolute;
+		width: 177.778px;
+		height: 100px;
+		left: 50px;
+		top: 0px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Inicio.html;
+		cursor: pointer;
+	}
+	input, textarea {
+		font-family: Argentum Sans;
+		max-width: none !important;
+	}
+	form input[type=text], 
+	form input[type=email],
+	form textarea {
+		font-size: 20px;
+	}
+	.button-4 {
+		font-family: Argentum Sans;
+		appearance: none;
+		background-color: #FAFBFC;
+		border: 1px solid rgba(27, 31, 35, 0.15);
+		border-radius: 6px;
+		box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+		box-sizing: border-box;
+		color: #24292E;
+		cursor: pointer;
+		display: inline-block;
+		font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 20px;
+		list-style: none;
+		padding: 6px 16px;
+		position: relative;
+		transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+		user-select: none;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+		vertical-align: middle;
+		white-space: nowrap;
+		word-wrap: break-word;
+	}
+	.button-4:hover {
+		background-color: #F3F4F6;
+		text-decoration: none;
+		transition-duration: 0.1s;
+		}
+
+	.button-4:disabled {
+		background-color: #FAFBFC;
+		border-color: rgba(27, 31, 35, 0.15);
+		color: #959DA5;
+		cursor: default;
+		}
+
+	.button-4:active {
+		background-color: #EDEFF2;
+		box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+		transition: none 0s;
+		}
+
+	.button-4:focus {
+		outline: 1px transparent;
+		}
+
+	.button-4:before {
+		display: none;
+		}
+
+	.button-4:-webkit-details-marker {
+		display: none;
+		}
+</style>
+<script>
+	function mostrarPopup() {
+		var nombre = document.getElementById("nombre").value;
+		var correo = document.getElementById("correo").value;
+		var mensaje = document.getElementById("mensaje").value;
+
+		var popupContent = "Nombre: " + nombre + "\nCorreo: " + correo + "\nMensaje: " + mensaje;
+
+		alert(popupContent);
+}
+</script>
+</head>
+<body>
+	<div id="Contacto">
+	  <img id="Diagrama_AVV" src="https://cdn.alexm2.media/portfoliomedia/Diagrama_AVV.png" srcset="https://cdn.alexm2.media/portfoliomedia/Diagrama_AVV.png 1x, https://cdn.alexm2.media/portfoliomedia/Diagrama_AVV@2x.png 2x">
+  
+	  <svg class="Rectngulo_8">
+		<rect id="Rectngulo_8" rx="0" ry="0" x="0" y="0" width="1920" height="710"></rect>
+	  </svg>
+	  
+	  <div id="Footer">
+		<svg class="Rectngulo_12">
+		  <rect id="Rectngulo_12" rx="0" ry="0" x="0" y="0" width="1920" height="75"></rect>
+		</svg>
+		<div id="alexm2media">
+		  <span>alexm2.media</span>
+		</div>
+		<div id="n_2024_-_AlexM">
+		  <span>© 2024 - AlexM²</span>
+		</div>
+	  </div>
+	  
+	  <div id="Formulario">
+		<form action="" method="post">
+			<fieldset>
+				<div id="Nombre" class="txtinput">
+					<label for="nombre">Nombre</label><br>
+					<input type="text" id="nombre" name="nombre" size="100" required>
+				</div>
+				<div id="Correo">
+					<label for="correo" class="txtinput">Correo</label><br>
+					<input type="email" id="correo" name="correo" size="100" required>
+				</div>
+				<div id="Mensaje">
+					<label for="mensaje">Mensaje</label><br>
+					<textarea id="mensaje" name="mensaje" rows="4" cols="100" required></textarea>
+				</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<!-- <input type="submit" value="Enviar"> -->
+				<button type="button" onclick="mostrarPopup()" class="button-4">Enviar</button>
+				<input type="reset" value="Limpiar" class="button-4">
+			</fieldset>
+		</form>
+	  </div>
+	  
+  
+		<!-- <svg class="Rectngulo_9">
+		  <rect id="Rectngulo_9" rx="0" ry="0" x="0" y="0" width="1000" height="50"></rect>
+		</svg>
+		<svg class="Rectngulo_10">
+		  <rect id="Rectngulo_10" rx="0" ry="0" x="0" y="0" width="1000" height="50"></rect>
+		</svg>
+		<svg class="Rectngulo_11">
+		  <rect id="Rectngulo_11" rx="0" ry="0" x="0" y="0" width="1000" height="150"></rect>
+		</svg> -->
+	  </div>
+  
+	  <div id="Utiliza_este_formulario_para_c">
+		<span>Utiliza este formulario para contactarme.</span>
+	  </div>
+	  <div id="Quieres_ponerte_en_contacto_co">
+		<span>¿Quieres ponerte en contacto conmigo?</span>
+	  </div>
+	  <svg class="Lnea_2" viewBox="0 0 231 2">
+		<path id="Lnea_2" d="M 0 0 L 231 0"></path>
+	  </svg>
+	  <div id="Contacto_z">
+		<span>Contacto</span>
+	  </div>
+	  
+	  <div id="Men">
+		<svg class="Rectngulo_1">
+			<rect id="Rectngulo_1" rx="0" ry="0" x="0" y="0" width="1920" height="100">
+			</rect>
+		</svg>
+		<div id="CONTACTO">
+			<span><a href="Contacto.html">CONTACTO</a></span>
+		</div>
+		<div id="PROYECTOS">
+			<span><a href="Proyectos.html">PROYECTOS</a></span>
+		</div>
+		<div id="SOBRE_M">
+			<span><a href="Sobre_Mi.html">SOBRE MÍ</a></span>
+		</div>
+		<div id="INICIO">
+			<span><a href="index.html">INICIO</a></span>
+		</div>
+		<img id="AlexM2" src="https://cdn.alexm2.media/portfoliomedia/AlexM2.png" srcset="https://cdn.alexm2.media/portfoliomedia/AlexM2.png 1x, https://cdn.alexm2.media/portfoliomedia/AlexM2@2x.png 2x">
+			
+	</div>
+	</div>
+  </body>
+   
+</html>

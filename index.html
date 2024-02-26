@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inicio</title>
+<style id="applicationStylesheet" type="text/css">
+	@import url('https://fonts.cdnfonts.com/css/argentum-sans');
+	.mediaViewInfo {
+		--web-view-name: Inicio;
+		--web-view-id: Inicio;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Inicio;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+		max-width: 100%;
+	}
+	a {
+		all: unset;
+	}
+	#Inicio {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Inicio;
+		--web-view-id: Inicio;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Cuadrado {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Footer {
+		position: absolute;
+		width: 1920px;
+		height: 75px;
+		left: 0px;
+		top: 1005px;
+		overflow: visible;
+	}
+	#Rectngulo_12 {
+		filter: blur(5px);
+		fill: rgba(255,255,255,.25);
+	}
+	.Rectngulo_12 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 75px;
+		left: 0px;
+		top: 0px;
+	}
+	#alexm2media {
+		left: 1724px;
+		top: 26px;
+		position: absolute;
+		overflow: visible;
+		width: 140px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 20px;
+		color: rgba(193,120,36,1);
+	}
+	#n_2024_-_AlexM {
+		left: 50px;
+		top: 26px;
+		position: absolute;
+		overflow: visible;
+		width: 159px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#DJ__LJ__VJ {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.2));
+		left: 658px;
+		top: 618px;
+		position: absolute;
+		overflow: visible;
+		width: 129px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 25px;
+		color: rgba(255,255,255,1);
+	}
+	#Lnea_1 {
+		fill: transparent;
+		stroke: rgba(193,120,36,0.502);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Lnea_1 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.2));
+		overflow: visible;
+		position: absolute;
+		width: 895px;
+		height: 20px;
+		left: 284.5px;
+		top: 598.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#AlexM2_Foto2023-Circulo {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.2));
+		position: absolute;
+		width: 400px;
+		height: 400px;
+		left: 1211px;
+		top: 340px;
+		overflow: visible;
+	}
+	#Hola_Soy_AlexM {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.2));
+		left: 284px;
+		top: 482px;
+		position: absolute;
+		overflow: visible;
+		width: 873px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 100px;
+		color: rgba(255,255,255,1);
+	}
+	#Men {
+		position: absolute;
+		width: 1920px;
+		height: 100px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectngulo_1 {
+		filter: blur(5px);
+		fill: rgba(255,255,255,.25);
+	}
+	.Rectngulo_1 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 100px;
+		left: 0px;
+		top: 0px;
+	}
+	#CONTACTO {
+		left: 1679px;
+		top: 36px;
+		position: absolute;
+		overflow: visible;
+		width: 141px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Contacto.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 25px;
+		color: rgba(255,255,255,1);
+	}
+	#PROYECTOS {
+		left: 1476px;
+		top: 36px;
+		position: absolute;
+		overflow: visible;
+		width: 153px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Proyectos.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 25px;
+		color: rgba(255,255,255,1);
+	}
+	#SOBRE_M {
+		left: 1300px;
+		top: 36px;
+		position: absolute;
+		overflow: visible;
+		width: 126px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Sobre_M_.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 25px;
+		color: rgba(255,255,255,1);
+	}
+	#INICIO {
+		left: 1170px;
+		top: 36px;
+		position: absolute;
+		overflow: visible;
+		width: 81px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 25px;
+		color: rgba(193,120,36,1);
+	}
+	#AlexM2 {
+		position: absolute;
+		width: 177.778px;
+		height: 100px;
+		left: 50px;
+		top: 0px;
+		overflow: visible;
+	}
+</style>
+</head>
+<body>
+<div id="Inicio">
+	<img id="Cuadrado" src="https://cdn.alexm2.media/portfoliomedia/Cuadrado.jpg" srcset="https://cdn.alexm2.media/portfoliomedia/Cuadrado.jpg 1x, https://cdn.alexm2.media/portfoliomedia/Cuadrado@2x.jpg 2x">
+		
+	<div id="Footer">
+		<svg class="Rectngulo_12">
+			<rect id="Rectngulo_12" rx="0" ry="0" x="0" y="0" width="1920" height="75">
+			</rect>
+		</svg>
+		<div id="alexm2media">
+			<span>alexm2.media</span>
+		</div>
+		<div id="n_2024_-_AlexM">
+			<span>© 2024 - AlexM²</span>
+		</div>
+	</div>
+	<div id="DJ__LJ__VJ">
+		<span>DJ / LJ / VJ</span>
+	</div>
+	<svg class="Lnea_1" viewBox="0 0 877 2">
+		<path id="Lnea_1" d="M 0 0 L 877 0">
+		</path>
+	</svg>
+	<img id="AlexM2_Foto2023-Circulo" src="https://cdn.alexm2.media/portfoliomedia/AlexM2_Foto2023-Circulo.png" srcset="https://cdn.alexm2.media/portfoliomedia/AlexM2_Foto2023-Circulo.png 1x, https://cdn.alexm2.media/portfoliomedia/AlexM2_Foto2023-Circulo@2x.png 2x">
+		
+	<div id="Hola_Soy_AlexM">
+		<span>¡Hola! Soy AlexM²</span>
+	</div>
+	<div id="Men">
+		<svg class="Rectngulo_1">
+			<rect id="Rectngulo_1" rx="0" ry="0" x="0" y="0" width="1920" height="100">
+			</rect>
+		</svg>
+		<div id="CONTACTO">
+			<span><a href="Contacto.html">CONTACTO</a></span>
+		</div>
+		<div id="PROYECTOS">
+			<span><a href="Proyectos.html">PROYECTOS</a></span>
+		</div>
+		<div id="SOBRE_M">
+			<span><a href="Sobre_Mi.html">SOBRE MÍ</a></span>
+		</div>
+		<div id="INICIO">
+			<span><a href="index.html">INICIO</a></span>
+		</div>
+		<img id="AlexM2" src="https://cdn.alexm2.media/portfoliomedia/AlexM2.png" srcset="https://cdn.alexm2.media/portfoliomedia/AlexM2.png 1x, https://cdn.alexm2.media/portfoliomedia/AlexM2@2x.png 2x">
+			
+	</div>
+</div>
+</body>
+</html>

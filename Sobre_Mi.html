@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre Mí</title>
+<style id="applicationStylesheet" type="text/css">
+	@import url('https://fonts.cdnfonts.com/css/argentum-sans');
+	.mediaViewInfo {
+		--web-view-name: Sobre Mí;
+		--web-view-id: Sobre_M;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Sobre_M;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+		max-width: 100%;
+	}
+	a {
+		all: unset;
+	}
+	#Sobre_M {
+		position: absolute;
+		width: 1920px;
+		height: 1620px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Sobre Mí;
+		--web-view-id: Sobre_M;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Flecha {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		left: 0px;
+		top: -408px;
+		overflow: visible;
+	}
+	#Rectngulo_2 {
+		fill: rgba(18,18,18,1);
+	}
+	.Rectngulo_2 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.2));
+		position: absolute;
+		overflow: visible;
+		width: 1938px;
+		height: 1268px;
+		left: 0px;
+		top: 378px;
+	}
+	#Footer {
+		position: absolute;
+		width: 1920px;
+		height: 75px;
+		left: 0px;
+		top: 1545px;
+		overflow: visible;
+	}
+	#Rectngulo_12 {
+		filter: blur(5px);
+		fill: rgba(255,255,255,.25);
+	}
+	.Rectngulo_12 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 75px;
+		left: 0px;
+		top: 0px;
+	}
+	#alexm2media {
+		left: 1724px;
+		top: 26px;
+		position: absolute;
+		overflow: visible;
+		width: 140px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 20px;
+		color: rgba(193,120,36,1);
+	}
+	#n_2024_-_AlexM {
+		left: 50px;
+		top: 26px;
+		position: absolute;
+		overflow: visible;
+		width: 159px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Barra_Proyectos {
+		position: absolute;
+		width: 1920px;
+		height: 150px;
+		left: 0px;
+		top: 1363px;
+		overflow: visible;
+	}
+	#Flecha_q {
+		position: absolute;
+		width: 1920px;
+		height: 150px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectngulo_5 {
+		opacity: 0.5;
+		filter: blur(10px);
+		fill: rgba(0,0,0,1);
+	}
+	.Rectngulo_5 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 150px;
+		left: 0px;
+		top: 0px;
+	}
+	#Quieres_ver_mis_proyectos {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.2));
+		left: 562px;
+		top: 52px;
+		position: absolute;
+		overflow: visible;
+		width: 540px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+	}
+	#Botn_Contacto {
+		position: absolute;
+		width: 200px;
+		height: 50px;
+		left: 1159px;
+		top: 50px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Proyectos.html;
+		cursor: pointer;
+	}
+	#Rectngulo_7 {
+		fill: rgba(193,120,36,1);
+	}
+	.Rectngulo_7 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.2));
+		position: absolute;
+		overflow: visible;
+		width: 218px;
+		height: 68px;
+		left: 0px;
+		top: 0px;
+	}
+	#Proyectos {
+		left: 27px;
+		top: 8px;
+		position: absolute;
+		overflow: visible;
+		width: 147px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Botn_LinkedIn {
+		position: absolute;
+		width: 200px;
+		height: 50px;
+		left: 1201px;
+		top: 1247px;
+		overflow: visible;
+	}
+	#Rectngulo_3 {
+		fill: rgba(0,119,181,1);
+	}
+	.Rectngulo_3 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.2));
+		position: absolute;
+		overflow: visible;
+		width: 218px;
+		height: 68px;
+		left: 0px;
+		top: 0px;
+	}
+	#LinkedIn {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.2));
+		left: 58px;
+		top: 13px;
+		position: absolute;
+		overflow: visible;
+		width: 85px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Formacin {
+		position: absolute;
+		width: 703px;
+		height: 416px;
+		left: 869px;
+		top: 783px;
+		overflow: visible;
+	}
+	#B2 {
+		position: absolute;
+		width: 257px;
+		height: 64px;
+		left: 10px;
+		top: 352px;
+		overflow: visible;
+	}
+	#B2_First_Ingls {
+		left: 1px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 227px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Cambridge {
+		left: 0px;
+		top: 40px;
+		position: absolute;
+		overflow: visible;
+		width: 111px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Mayo_2022 {
+		left: 151px;
+		top: 40px;
+		position: absolute;
+		overflow: visible;
+		width: 107px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Piloto_A1A3 {
+		position: absolute;
+		width: 537px;
+		height: 64px;
+		left: 10px;
+		top: 278px;
+		overflow: visible;
+	}
+	#Piloto_a_distancia_UASdrones_A {
+		left: 7px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 525px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#AESA {
+		left: 0px;
+		top: 40px;
+		position: absolute;
+		overflow: visible;
+		width: 55px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Abril__2023 {
+		left: 431px;
+		top: 40px;
+		position: absolute;
+		overflow: visible;
+		width: 107px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#grandMA3 {
+		position: absolute;
+		width: 363px;
+		height: 64px;
+		left: 10px;
+		top: 204px;
+		overflow: visible;
+	}
+	#grandMA3_User_Training {
+		left: 2px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 361px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#Stonex_SL_Madrid {
+		left: 0px;
+		top: 40px;
+		position: absolute;
+		overflow: visible;
+		width: 185px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Junio_2023 {
+		left: 255px;
+		top: 40px;
+		position: absolute;
+		overflow: visible;
+		width: 109px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#AVVD {
+		position: absolute;
+		width: 649px;
+		height: 64px;
+		left: 11px;
+		top: 130px;
+		overflow: visible;
+	}
+	#Animacin_Visual_en_Vivo_y_en_D {
+		left: 1px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 649px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#IES_Pablo_Neruda_Huelva {
+		left: 0px;
+		top: 40px;
+		position: absolute;
+		overflow: visible;
+		width: 257px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Septiembre_2022_-_Noviembre_20 {
+		left: 298px;
+		top: 40px;
+		position: absolute;
+		overflow: visible;
+		width: 351px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#VDJS {
+		position: absolute;
+		width: 692px;
+		height: 64px;
+		left: 11px;
+		top: 56px;
+		overflow: visible;
+	}
+	#Tcnico_en_Video_Disc-Jockey_y_ {
+		left: 2px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 691px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#IES_Pablo_Neruda_Huelva_bi {
+		left: 0px;
+		top: 40px;
+		position: absolute;
+		overflow: visible;
+		width: 257px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Septiembre_2021_-_Junio_2023 {
+		left: 399px;
+		top: 40px;
+		position: absolute;
+		overflow: visible;
+		width: 293px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Formacin_y_Certificaciones {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 557px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+	}
+	#Hola_Soy_Alejandro_estudiante_ {
+		left: 871px;
+		top: 560px;
+		position: absolute;
+		overflow: visible;
+		width: 860px;
+		height: 212px;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Hola_Soy_AlexM {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.2));
+		left: 991px;
+		top: 472px;
+		position: absolute;
+		overflow: visible;
+		width: 437px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 50px;
+		color: rgba(255,255,255,1);
+	}
+	#AlexM2_Foto2023-Circulo {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.2));
+		position: absolute;
+		width: 500px;
+		height: 500px;
+		left: 228px;
+		top: 560px;
+		overflow: visible;
+	}
+	#Lnea_2 {
+		fill: transparent;
+		stroke: rgba(193,120,36,0.502);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Lnea_2 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.2));
+		overflow: visible;
+		position: absolute;
+		width: 243px;
+		height: 20px;
+		left: 847.75px;
+		top: 257.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Sobre_M_bp {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.2));
+		left: 847.25px;
+		top: 200px;
+		position: absolute;
+		overflow: visible;
+		width: 224px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 50px;
+		color: rgba(255,255,255,1);
+	}
+	#Men {
+		position: absolute;
+		width: 1920px;
+		height: 100px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectngulo_1 {
+		filter: blur(5px);
+		fill: rgba(255,255,255,.25);
+	}
+	.Rectngulo_1 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 100px;
+		left: 0px;
+		top: 0px;
+	}
+	#CONTACTO {
+		left: 1679px;
+		top: 36px;
+		position: absolute;
+		overflow: visible;
+		width: 141px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Contacto.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 25px;
+		color: rgba(255,255,255,1);
+	}
+	#PROYECTOS {
+		left: 1476px;
+		top: 36px;
+		position: absolute;
+		overflow: visible;
+		width: 153px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Proyectos.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 25px;
+		color: rgba(255,255,255,1);
+	}
+	#SOBRE_M {
+		left: 1300px;
+		top: 36px;
+		position: absolute;
+		overflow: visible;
+		width: 126px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 25px;
+		color: rgba(193,120,36,1);
+	}
+	#INICIO {
+		left: 1170px;
+		top: 36px;
+		position: absolute;
+		overflow: visible;
+		width: 81px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Inicio.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Argentum Sans;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 25px;
+		color: rgba(255,255,255,1);
+	}
+	#AlexM2 {
+		position: absolute;
+		width: 177.778px;
+		height: 100px;
+		left: 50px;
+		top: 0px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Inicio.html;
+		cursor: pointer;
+	}
+	.bttn {
+		cursor: pointer;
+	}
+</style>
+</head>
+<body>
+<div id="Sobre_M">
+	<img id="Flecha" src="https://cdn.alexm2.media/portfoliomedia/Flecha.png" srcset="https://cdn.alexm2.media/portfoliomedia/Flecha.png 1x, https://cdn.alexm2.media/portfoliomedia/Flecha@2x.png 2x">
+		
+	<svg class="Rectngulo_2">
+		<rect id="Rectngulo_2" rx="0" ry="0" x="0" y="0" width="1920" height="1250">
+		</rect>
+	</svg>
+	<div id="Footer">
+		<svg class="Rectngulo_12">
+			<rect id="Rectngulo_12" rx="0" ry="0" x="0" y="0" width="1920" height="75">
+			</rect>
+		</svg>
+		<div id="alexm2media">
+			<span>alexm2.media</span>
+		</div>
+		<div id="n_2024_-_AlexM">
+			<span>© 2024 - AlexM²</span>
+		</div>
+	</div>
+	<div id="Barra_Proyectos">
+		<img id="Flecha_q" src="https://cdn.alexm2.media/portfoliomedia/Flecha_q.png" srcset="https://cdn.alexm2.media/portfoliomedia/Flecha_q.png 1x, https://cdn.alexm2.media/portfoliomedia/Flecha_q@2x.png 2x">
+			
+		<svg class="Rectngulo_5">
+			<rect id="Rectngulo_5" rx="0" ry="0" x="0" y="0" width="1920" height="150">
+			</rect>
+		</svg>
+		<div id="Quieres_ver_mis_proyectos">
+			<span>¿Quieres ver mis proyectos?</span>
+		</div>
+		<a href="/Proyectos.html" class="bttn"><div id="Botn_Contacto">
+			<svg class="Rectngulo_7">
+				<rect id="Rectngulo_7" rx="20" ry="20" x="0" y="0" width="200" height="50">
+				</rect>
+			</svg>
+			<div id="Proyectos">
+				<span>Proyectos</span>
+			</div>
+		</div></a>
+	</div>
+	<a href="https://www.linkedin.com/in/alexm2/" class="bttn"><div id="Botn_LinkedIn">
+		<svg class="Rectngulo_3">
+			<rect id="Rectngulo_3" rx="25" ry="25" x="0" y="0" width="200" height="50">
+			</rect>
+		</svg>
+		<div id="LinkedIn">
+			<span>LinkedIn</span>
+		</div>
+	</div></a>
+	<div id="Formacin">
+		<div id="B2">
+			<div id="B2_First_Ingls">
+				<span>B2 First (Inglés)</span>
+			</div>
+			<div id="Cambridge">
+				<span>Cambridge</span>
+			</div>
+			<div id="Mayo_2022">
+				<span>Mayo 2022</span>
+			</div>
+		</div>
+		<div id="Piloto_A1A3">
+			<div id="Piloto_a_distancia_UASdrones_A">
+				<span>Piloto a distancia UAS/drones A1/A3</span>
+			</div>
+			<div id="AESA">
+				<span>AESA</span>
+			</div>
+			<div id="Abril__2023">
+				<span>Abril  2023</span>
+			</div>
+		</div>
+		<div id="grandMA3">
+			<div id="grandMA3_User_Training">
+				<span>grandMA3 User Training</span>
+			</div>
+			<div id="Stonex_SL_Madrid">
+				<span>Stonex SL (Madrid)</span>
+			</div>
+			<div id="Junio_2023">
+				<span>Junio 2023</span>
+			</div>
+		</div>
+		<div id="AVVD">
+			<div id="Animacin_Visual_en_Vivo_y_en_D">
+				<span>Animación Visual en Vivo y en Directo (CdP)</span>
+			</div>
+			<div id="IES_Pablo_Neruda_Huelva">
+				<span>IES Pablo Neruda (Huelva)</span>
+			</div>
+			<div id="Septiembre_2022_-_Noviembre_20">
+				<span>Septiembre 2022 - Noviembre 2022</span>
+			</div>
+		</div>
+		<div id="VDJS">
+			<div id="Tcnico_en_Video_Disc-Jockey_y_">
+				<span>Técnico en Video, Disc-Jockey y Sonido (CFGM)</span>
+			</div>
+			<div id="IES_Pablo_Neruda_Huelva_bi">
+				<span>IES Pablo Neruda (Huelva)</span>
+			</div>
+			<div id="Septiembre_2021_-_Junio_2023">
+				<span>Septiembre 2021 - Junio 2023</span>
+			</div>
+		</div>
+		<div id="Formacin_y_Certificaciones">
+			<span>Formación y Certificaciones</span>
+		</div>
+	</div>
+	<div id="Hola_Soy_Alejandro_estudiante_">
+		<span>¡Hola! Soy Alejandro, estudiante de «Administración de Sistemas Informáticos en Red» y un apasionado del mundo audiovisual. En 2023 celebré mi graduación como «Técnico en Video Disc-Jockey y Sonido», un hito significativo en mi carrera profesional.<br/><br/>Mi entusiasmo por el aprendizaje constante es lo que impulsa mi carrera. Me propongo desafíos personales para mantenerme al día con los avances y evolucionar como profesional.</span><br/>
+	</div>
+	<div id="Hola_Soy_AlexM">
+		<span>¡Hola! Soy AlexM²</span>
+	</div>
+	<img id="AlexM2_Foto2023-Circulo" src="https://cdn.alexm2.media/portfoliomedia/AlexM2_Foto2023-Circulo.png" srcset="https://cdn.alexm2.media/portfoliomedia/AlexM2_Foto2023-Circulo.png 1x, https://cdn.alexm2.media/portfoliomedia/AlexM2_Foto2023-Circulo@2x.png 2x">
+		
+	<svg class="Lnea_2" viewBox="0 0 225 2">
+		<path id="Lnea_2" d="M 0 0 L 225 0">
+		</path>
+	</svg>
+	<div id="Sobre_M_bp">
+		<span>Sobre Mí</span>
+	</div>
+	<div id="Men">
+		<svg class="Rectngulo_1">
+			<rect id="Rectngulo_1" rx="0" ry="0" x="0" y="0" width="1920" height="100">
+			</rect>
+		</svg>
+		<div id="CONTACTO">
+			<span><a href="Contacto.html">CONTACTO</a></span>
+		</div>
+		<div id="PROYECTOS">
+			<span><a href="Proyectos.html">PROYECTOS</a></span>
+		</div>
+		<div id="SOBRE_M">
+			<span><a href="Sobre_Mi.html">SOBRE MÍ</a></span>
+		</div>
+		<div id="INICIO">
+			<span><a href="index.html">INICIO</a></span>
+		</div>
+		<img id="AlexM2" src="https://cdn.alexm2.media/portfoliomedia/AlexM2.png" srcset="https://cdn.alexm2.media/portfoliomedia/AlexM2.png 1x, https://cdn.alexm2.media/portfoliomedia/AlexM2@2x.png 2x">
+			
+	</div>
+</div>
+</body>
+</html>
