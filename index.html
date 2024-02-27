@@ -263,6 +263,20 @@
 	}
 	.am2media:hover {
 		filter: brightness(110%);
+		transition: ease-in-out(filter) 1s;
+	}
+	.addfadein1 {
+		animation: fadeIn 2s;
+	}
+	.addfadein2{
+		animation: fadeIn 4s;
+	}
+	.addfadein3 {
+		animation: fadeIn 8s;
+	}
+	@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 	}
 </style>
 </head>
@@ -282,16 +296,16 @@
 			<span>© 2024 - AlexM²</span>
 		</div>
 	</div>
-	<div id="DJ__LJ__VJ">
+	<div id="DJ__LJ__VJ" class="addfadein3">
 		<span>DJ / LJ / VJ</span>
 	</div>
 	<svg class="Lnea_1" viewBox="0 0 877 2">
 		<path id="Lnea_1" d="M 0 0 L 877 0">
 		</path>
 	</svg>
-	<img id="AlexM2_Foto2023-Circulo" src="https://cdn.alexm2.media/portfoliomedia/AlexM2_Foto2023-Circulo.png" srcset="https://cdn.alexm2.media/portfoliomedia/AlexM2_Foto2023-Circulo.png 1x, https://cdn.alexm2.media/portfoliomedia/AlexM2_Foto2023-Circulo@2x.png 2x">
+	<img id="AlexM2_Foto2023-Circulo" class="addfadein2" src="https://cdn.alexm2.media/portfoliomedia/AlexM2_Foto2023-Circulo.png" srcset="https://cdn.alexm2.media/portfoliomedia/AlexM2_Foto2023-Circulo.png 1x, https://cdn.alexm2.media/portfoliomedia/AlexM2_Foto2023-Circulo@2x.png 2x">
 		
-	<div id="Hola_Soy_AlexM">
+	<div id="Hola_Soy_AlexM" class="addfadein1">
 		<span>¡Hola! Soy AlexM²</span>
 	</div>
 	<div id="Men">

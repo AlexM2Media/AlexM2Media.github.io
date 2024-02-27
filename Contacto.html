@@ -448,6 +448,20 @@
 	}
 	.am2media:hover {
 		filter: brightness(110%);
+		transition: ease-in-out(filter) 1s;
+	}
+	.addfadein1 {
+		animation: fadeIn 2s;
+	}
+	.addfadein2{
+		animation: fadeIn 2.5s;
+	}
+	.addfadein3 {
+		animation: fadeIn 3s;
+	}
+	@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 	}
 </style>
 <script>
@@ -482,7 +496,7 @@
 		</div>
 	  </div>
 	  
-	  <div id="Formulario">
+	  <div id="Formulario" class="addfadein3">
 		<form action="" method="post">
 			<fieldset>
 				<div id="Nombre" class="txtinput">
@@ -516,10 +530,10 @@
 		</svg> -->
 	  </div>
   
-	  <div id="Utiliza_este_formulario_para_c">
+	  <div id="Utiliza_este_formulario_para_c" class="addfadein2">
 		<span>Utiliza este formulario para contactarme.</span>
 	  </div>
-	  <div id="Quieres_ponerte_en_contacto_co">
+	  <div id="Quieres_ponerte_en_contacto_co" class="addfadein1">
 		<span>¿Quieres ponerte en contacto conmigo?</span>
 	  </div>
 	  <svg class="Lnea_2" viewBox="0 0 231 2">

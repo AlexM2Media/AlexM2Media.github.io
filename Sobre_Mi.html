@@ -685,6 +685,20 @@
 	}
 	.am2media:hover {
 		filter: brightness(110%);
+		transition: ease-in-out(filter) 1s;
+	}
+	.addfadein1 {
+		animation: fadeIn 2s;
+	}
+	.addfadein2{
+		animation: fadeIn 4s;
+	}
+	.addfadein3 {
+		animation: fadeIn 6s;
+	}
+	@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 	}
 </style>
 </head>
@@ -737,7 +751,7 @@
 			<span>LinkedIn</span>
 		</div>
 	</div></a>
-	<div id="Formacin">
+	<div id="Formacin" class="addfadein3">
 		<div id="B2">
 			<div id="B2_First_Ingls">
 				<span>B2 First (Inglés)</span>
@@ -797,13 +811,13 @@
 			<span>Formación y Certificaciones</span>
 		</div>
 	</div>
-	<div id="Hola_Soy_Alejandro_estudiante_">
+	<div id="Hola_Soy_Alejandro_estudiante_" class="addfadein2">
 		<span>¡Hola! Soy Alejandro, estudiante de «Administración de Sistemas Informáticos en Red» y un apasionado del mundo audiovisual. En 2023 celebré mi graduación como «Técnico en Video Disc-Jockey y Sonido», un hito significativo en mi carrera profesional.<br/><br/>Mi entusiasmo por el aprendizaje constante es lo que impulsa mi carrera. Me propongo desafíos personales para mantenerme al día con los avances y evolucionar como profesional.</span><br/>
 	</div>
-	<div id="Hola_Soy_AlexM">
+	<div id="Hola_Soy_AlexM" class="addfadein1">
 		<span>¡Hola! Soy AlexM²</span>
 	</div>
-	<img id="AlexM2_Foto2023-Circulo" src="https://cdn.alexm2.media/portfoliomedia/AlexM2_Foto2023-Circulo.png" srcset="https://cdn.alexm2.media/portfoliomedia/AlexM2_Foto2023-Circulo.png 1x, https://cdn.alexm2.media/portfoliomedia/AlexM2_Foto2023-Circulo@2x.png 2x">
+	<img id="AlexM2_Foto2023-Circulo" class="addfadein2" src="https://cdn.alexm2.media/portfoliomedia/AlexM2_Foto2023-Circulo.png" srcset="https://cdn.alexm2.media/portfoliomedia/AlexM2_Foto2023-Circulo.png 1x, https://cdn.alexm2.media/portfoliomedia/AlexM2_Foto2023-Circulo@2x.png 2x">
 		
 	<svg class="Lnea_2" viewBox="0 0 225 2">
 		<path id="Lnea_2" d="M 0 0 L 225 0">
